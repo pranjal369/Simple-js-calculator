@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    min-height: 100vh;
+   background-color: rgb(122 202 206 / 79%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 300px;
+    height: 550px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.5);
+    background-color: rgb(23 25 26);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+form input {
+    width: 100%;
+    height: 150px;
+    text-align: right;
+    pointer-events: none;
+    font-size: 1.5rem;
+    font-weight: 20px;
+}
+
+button {
+    flex: 0 0 22%;
+    width: 60px;
+    margin: 5px 0;
+    height: 52px;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    /* margin: 2px; */
+    /* align-items: center; */
+}
+
+.buttons {
+    display: flex;
+    /* padding: 23px; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(32, 29, 29);
+}
+
+.btn-yellow {
+    background-color: rgb(241, 130, 26);
+}
+
+.btn-grey {
+    background-color: rgb(241, 241, 238);
+}
+
+.btn-equal {
+    background-color: green;
+}
+
+.btn-clear {
+    background-color: rgb(221, 17, 17);
+}
+
+input{
+    background-color: black;
+    /* font-size: 4px; */
+}
+
+.btn-pc{
+    width: 46px;
+    flex: 0 0 32%;
+    width: 60px;
+    margin: 5px 0;
+    height: 52px;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(119, 240, 224);
+}
+
+.btn-pc:hover + .hide{
+    display: block;
+    color: rgb(255, 160, 19);
+    font-family:cursive;
+    text-decoration: underline;
+    background-color: blanchedalmond;
+    transition: 0.5s;
+    text-align: center;
+    justify-content: center;
+    margin: 4px;
+    /* float: right; */
+    
+}
+
+.hide{
+    display: none;
+}
+
+span{
+    color: red;
+}
+
+h1{
+    display:inline;
+    /* float: left; */
+    margin: 0;
+    padding: 0;
+}
